@@ -1,6 +1,6 @@
 {
   "name": "react-compose-io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Better way to create your React Components",
   "packageManager": "yarn@3.0.2",
   "main": "build/index.js",

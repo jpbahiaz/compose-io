@@ -2,10 +2,10 @@
   "name": "react-compose-io",
   "version": "1.0.1",
   "description": "Better way to create your React Components",
-  "packageManager": "yarn@3.0.2",
   "main": "build/index.js",
   "module": "build/index.js",
   "types": "build/index.d.ts",
+  "sideEffects": false,
   "scripts": {
     "build": "rollup -c"
   },
@@ -22,5 +22,16 @@
     "rollup-plugin-analyzer": "^4.0.0",
     "tslib": "^2.3.1",
     "typescript": "^4.5.5"
+  },
+  "author": {
+    "name": "Zica",
+    "email": "jp.bahia.zica@gmail.com"
+  },
+  "keywords": ["react", "functional", "component", "compose", "pure", "io"],
+  "repository": {
+    "url": "https://github.com/jpbahiaz/compose-io"
+  },
+  "bugs": {
+    "url": "https://github.com/jpbahiaz/compose-io/issues"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "react-compose-io",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Better way to create your React Components",
   "main": "build/index.js",
   "module": "build/index.js",
@@ -27,7 +27,14 @@
     "name": "Zica",
     "email": "jp.bahia.zica@gmail.com"
   },
-  "keywords": ["react", "functional", "component", "compose", "pure", "io"],
+  "keywords": [
+    "react",
+    "functional",
+    "component",
+    "compose",
+    "pure",
+    "io"
+  ],
   "repository": {
     "url": "https://github.com/jpbahiaz/compose-io"
   },

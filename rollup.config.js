@@ -1,6 +1,7 @@
 import resolve from "@rollup/plugin-node-resolve"
 import commonjs from "@rollup/plugin-commonjs"
 import typescript from "@rollup/plugin-typescript"
+import analyzer from "rollup-plugin-analyzer"
 
 export default [
   {
@@ -12,7 +13,11 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
-      typescript()
-    ]
+      typescript(),
+      analyzer({
+        summaryOnly: true
+      })
+    ],
+    external: ["react"]
   }
 ]

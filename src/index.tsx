@@ -8,9 +8,7 @@ export function composeIO<IOProps = any, Props = any>(
     const io = IO(props);
     const View = Component as React.FC<any>;
 
-    // return <View _io={io} {...props} />;
-
-    return React.createElement(View, { _io: io, ...props }, null)
+    return React.createElement(View, Object.assign({ _io: io }, props), null)
   };
 }
 

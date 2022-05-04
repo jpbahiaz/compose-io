@@ -1,23 +1,23 @@
-import resolve from "@rollup/plugin-node-resolve"
-import commonjs from "@rollup/plugin-commonjs"
-import typescript from "@rollup/plugin-typescript"
-import analyzer from "rollup-plugin-analyzer"
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import typescript from "@rollup/plugin-typescript";
+import analyzer from "rollup-plugin-analyzer";
 
 export default [
   {
     input: "./src/index.tsx",
     output: {
       dir: "build",
-      format: "esm"
+      format: "cjs",
     },
     plugins: [
       resolve(),
       commonjs(),
       typescript(),
       analyzer({
-        summaryOnly: true
-      })
+        summaryOnly: true,
+      }),
     ],
-    external: ["react"]
-  }
-]
+    external: ["react"],
+  },
+];

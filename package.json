@@ -7,7 +7,7 @@
   "types": "build/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "rollup -c"
+    "build": "rm -rf build && rollup -c"
   },
   "peerDependencies": {
     "react": "^17.0.2"
